@@ -1,0 +1,108 @@
+-> Created by Guido van rossum n 1991.
+
+What can Python do? ----------------------------------------------------------------------------------------
+-> Used on a server to create web applications.
+-> Used alongside software to create workflows.
+-> Connect to database systems. It can also read and modify files.
+-> Used to handle big data and perform complex mathematics.
+-> sed for rapid prototyping, or for production-ready software development.
+
+Why Python?-------------------------------------------------------------------------------------------------
+-> Works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+-> Has a simple syntax similar to the English language.
+-> as syntax that allows developers to write programs with fewer lines than some other programming languages.
+-> Runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+-> Can be treated in a procedural way, an object-oriented way or a functional way.
+
+TO CHECK PYTHON VERSION ------------------------------------------------------------------------------------
+import sys
+print(sys.version)
+
+INDENTATION :- spaces at the beginning of a code line.-----------------------------------------------------------
+-> NOTE use same number of spaces in the same block of code.
+if 5 > 2:
+ print("Five is greater than two!")
+        print("Five is greater than two!")   # This line gives an error
+
+TYPES OF COMMENTS----------------------------------------------------------------------------------------------
+# Single line comment
+"""
+Multiline comment
+here
+"""
+
+VARIABLES :- containers for storing data values.--------------------------------------------------------------------
+-> CREATIG A VARABLE:- It is created the moment you assign value to it.
+x = 5
+y = "John"
+print(x)
+print(y)
+
+-> No need to declare any particular type, type can also be changed anytime.
+x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)    # Sally in output
+
+-> CASTING :- To specify the datatype of variable.
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+
+-> GET THE TYPE
+x = 5
+y = "John"
+print(type(x))     # <class 'int'>
+print(type(y))     # <class 'str'>
+
+-> Single or double quotes
+x = "John"
+# is the same as
+x = 'John'
+
+-> Case - sensitive :- Yes, it is.
+a = 4
+A = "Sally"
+#A will not overwrite a
+
+VARIABLE NAMES :- A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). ---------------------------------------------
+Rules for Python variables:
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (age, Age and AGE are three different variables)
+A variable name cannot be any of the Python keywords.
+
+-> CAMEL CASE :-  myVariableName = "John"
+-> PASCAL CASE :- MyVariableName = "John"
+-> SNAKE CASE :- my_variable_name = "John"
+
+ASSIGN MULTIPLE VALUES --------------------------------------------------------------------------------------------
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+
+-> unpack a collection :- extract the values into variables from a list, tuple etc.
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+OUTPUT VARIABLES :- suning print() function-----------------------------------------------------------------------
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+OR 
+
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
